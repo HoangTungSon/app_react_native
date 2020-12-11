@@ -4,7 +4,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from '@expo/vector-icons';
 import WalletScreen from './wallet/walletScreen';
 import EmailScreen from './email/emailScreen';
-import HomeList from './home/list';
+import HomeScreen from './home/homeScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -34,7 +34,7 @@ export default function ListScreen({ navigation }) {
           inactiveTintColor: 'gray',
         }}
       >
-        <Tab.Screen name="HomeList" component={HomeList} />
+        <Tab.Screen name="HomeList" component={HomeScreen} />
         <Tab.Screen name="Wallet" component={WalletScreen} />
         <Tab.Screen name="Email" component={EmailScreen} />
       </Tab.Navigator>
